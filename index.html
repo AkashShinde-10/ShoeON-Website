@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeON</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="neon-background"></div>
+    <div class="neon-particles"></div>
+    
+    <div class="hero"> <span class="text shoe">Shoe</span>
+      <span id="ball-container" class="ochar">O</span>
+      <span class="text nchar">N</span>
+      <button onclick="window.location.href='home.html'">Go To Store</button>
+    </div>
+
+    <div class="banner">
+      <div class="slider" style="--quantity: 8">
+          <div class="item" style="--position: 1"><img src="/img1.jpg" alt=""></div>
+          <div class="item" style="--position: 2"><img src="/img7.png" alt=""></div>
+          <div class="item" style="--position: 3"><img src="/img3.png" alt=""></div>
+          <div class="item" style="--position: 4"><img src="/img8.png" alt=""></div>
+          <div class="item" style="--position: 5"><img src="/img1.jpg" alt=""></div>
+          <div class="item" style="--position: 6"><img src="/img3.png" alt=""></div>
+          <div class="item" style="--position: 7"><img src="/img7.png" alt=""></div>
+          <div class="item" style="--position: 8"><img src="/img8.png" alt=""></div>
+          
+      </div>
+      
+  </div>
+
+  <div class="content">
+    <div class="page-content ">
+      <h1>STORIES, STYLES AND SPORTSWEAR AT SHOEON</h1>
+      <br>
+      <p>Sport keeps us fit. Keeps you mindful. Brings us together. Through sport we have the power to change lives. Whether it is through stories of inspiring athletes. Helping you to get up and get moving. Sportswear featuring the latest technologies, to up your performance. Beat your PB. shoeON offers a home to the runner, the basketball player, the soccer kid, the fitness enthusiast. The weekend hiker that loves to escape the city. The yoga teacher that spreads the moves. The 3-Stripes are seen in the music scene. On stage, at festivals. Our sports clothing keeps you focused before that whistle blows. During the race. And at the finish lines. We’re here to support creators. Improve their game. Their lives. And change the world.
+      <br><br>
+      shoeON is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sports apparel and style that match their athletic needs,while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="leftscroll leftscroll1"><img src="/adidas-black-vector-logo.png" alt=""></div>
+    <div class="leftscroll leftscroll2"><img src="/new-balance-logo.png" alt=""></div>
+    <div class="leftscroll leftscroll3"><img src="/nike-just-do-it-seeklogo.png" alt=""></div>
+    <div class="leftscroll leftscroll4"><img src="/puma-se--eps--vector-logo.png" alt=""></div>
+    <div class="leftscroll leftscroll5"><img src="/reebok-shoes-vector-logo.png" alt=""></div>
+    <div class="leftscroll leftscroll6"><img src="/under-armour-logo-vector-01.png" alt=""></div>
+  </div>
+
+
+
+    <!--                Footer start                    -->
+
+
+    <footer>
+      <div class="footer-container">
+        <!-- Section for about the site or company -->
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are India's leading online shoe store offering a wide variety of athletic and casual footwear from top global brands like Nike, Adidas, Puma, Reebok, and New Balance.</p>
+        </div>
+    
+        <!-- Section for customer service or contact -->
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+    
+        <!-- Section for legal information -->
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    
+        <!-- Section for social media links -->
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+    
+        <!-- Section for payment and security information -->
+        <div class="footer-section">
+          <h3>Payment Methods</h3>
+          <ul>
+            <li>Credit & Debit Cards</li>
+            <li>UPI (Unified Payments Interface)</li>
+            <li>Net Banking</li>
+            <li>Cash on Delivery</li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 ShoeON.com. All rights reserved.</p>
+        <p>Made by Akash Shinde</p>
+      </div>
+    </footer>
+    
+
+  </div>
+
+    <!--                Footer End                    -->
+  
+ 
+  
+
+  <script>
+    // Generate Neon Particles
+    const particleContainer = document.querySelector('.neon-particles');
+    for (let i = 0; i < 100; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('neon-particle');
+        particle.style.left = `${Math.random() * 100}vw`;
+        particle.style.top = `${Math.random() * 100}vh`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        particleContainer.appendChild(particle);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const ballContainer = document.getElementById("ball-container");
+
+    const ballEmojis = ["⚽", "🏀", "🏃", "🏏", "⚾", "🎾"];
+    let index = 0;
+
+    function changeToBall() {
+        ballContainer.textContent = ballEmojis[index];
+        ballContainer.classList.add("small-ball"); // Apply smaller size
+        index = (index + 1) % ballEmojis.length;
+        setTimeout(changeToBall, 2000);
+    }
+
+    // Wait for the bounce animation to end before changing size
+    ballContainer.addEventListener("animationend", () => {
+        ballContainer.classList.add("small-ball");
+        changeToBall();
+    });
+});
+
+
+    </script>
+</body>
+</html>

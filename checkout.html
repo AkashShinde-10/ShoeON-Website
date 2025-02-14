@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+  
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <div class="order-items"></div>
+      <div class="order-total">
+        <strong>Total Amount: <span class="total-amount">₹ 0</span></strong>
+      </div>
+    </div>
+  
+    <!-- Address Form -->
+    <div class="address-form">
+      <h2>Delivery Address</h2>
+      <form id="addressForm">
+        <label for="name">Full Name:</label>
+        <input class="name" id="name" type="text" placeholder="Full Name" minlength="3" maxlength="25" required>
+  
+        <label for="phone">Mobile Number:</label>
+        <input class="phone" id="phone" type="tel" placeholder="Phone Number" pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" required    oninvalid="this.setCustomValidity('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9')"
+        oninput="this.setCustomValidity('')">
+
+        <label for="email">Email:</label>
+        <input type="email" class="email" name="email" id="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Please enter a valid email address')">
+  
+        <label for="address1">Address Line 1:</label>
+        <input class="address1" id="address1" type="text" placeholder="Address Line 1" minlength="5" maxlength="70" required>
+  
+        <label for="address2">Address Line 2:</label>
+        <input class="address2" id="address2" type="text" placeholder="Address Line 2" minlength="5" maxlength="70" required>
+  
+        <label for="city">City:</label>
+        <input class="city" id="city" type="text" placeholder="City" minlength="3" maxlength="50" required>
+  
+        <label for="state">State:</label>
+        <input class="state" id="state" type="text" placeholder="State" minlength="3" maxlength="30" required>
+  
+        <label for="pin">Pin Code:</label>
+        <input class="pin" id="pin" type="text" placeholder="Postal Code" 
+       pattern="[1-9][0-9]{5}" minlength="6" maxlength="6" required
+       oninvalid="this.setCustomValidity('Please enter a valid 6-digit Indian Pin Code starting with 1-9')"
+       oninput="this.setCustomValidity('')">
+  
+        <div class="next">
+          <button class="nxtbtn" type="submit">Next</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    
+
+  <script type="module" src="checkout.js"></script> 
+</body>
+</html>

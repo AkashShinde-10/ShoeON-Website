@@ -1,0 +1,88 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.payment-page{
+  width: 70%;
+  padding: 10px 20px;
+  margin: 25px auto;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #333;
+}
+
+.item-amount{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 1.2rem;
+}
+
+.total{
+  text-align: right;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#addressContainer p{
+  line-height: 22px;
+  font-size: 1.2rem;
+}
+
+#addressContainer p b{
+  font-size: 1.2rem;
+}
+
+.payment-methods label{
+  display: block;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 550;
+  transition: .7s;
+}
+
+.payment-methods label:hover{
+  background-color: #a5f5b8;
+  color: blue;
+}
+
+.confirm-order-btn{
+  display: block;
+  color: black;
+  width: 99%;
+  margin: 15px 5px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: #f39274;
+  transition: .7s;
+  font-weight: 650;
+}
+
+.confirm-order-btn:hover{
+  color: white;
+  background-color: #28a745;
+}
+
+@media (max-width: 500px) {
+  .payment-page{
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .item-amount, .total, #addressContainer p, #addressContainer p b, .payment-methods label{
+    font-size: 1rem;
+  }
+
+  .confirm-order-btn{
+    font-size: 1.1rem;
+  }
+}

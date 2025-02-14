@@ -1,0 +1,55 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #d4fc79, #96e6a1);
+}
+
+.success{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-message{
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+   border-radius: 6px;
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.success-message button{
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-size: 550;
+  transition: .75s;
+  font-weight: 650;
+  background-color: transparent;
+  
+}
+
+.success-message button:hover{
+  background-color: #28a745;
+  color: white;
+}
+
+
+
+@media (max-width: 768px) {
+  .success-message{
+    font-size: 1.3rem;
+  }
+  .success-message button{
+    font-size: 1rem;
+  }
+}

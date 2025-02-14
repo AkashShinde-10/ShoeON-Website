@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="payment.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <title>Payment</title>
+</head>
+<body>
+
+ <div class="payment-page">
+  <h2>Amount Details</h2>
+  <div class="amount">
+    <div class="item-amount">
+      <span>Amount : </span>
+      <span class="amt"></span>
+    </div>
+    <div class="item-amount">
+      <span>Delivery Charges : </span>
+      <span class="delivery"></span>
+    </div>
+    <div class="item-amount">
+      <span>Packaging Charges : </span>
+      <span class="package"></span>
+    </div>
+    <hr>
+    <div class="total">
+      <strong>Total Amount: <span class="total-amount"></span></strong>
+    </div>
+  </div>
+  <hr>
+
+  <div id="addressContainer"></div>
+
+
+  <div class="payment-methods">
+    <h2>Select Payment Method</h2>
+      <label>
+        <input type="radio" name="payment" value="cod" > Cash on Delivery (COD)
+      </label>
+      <label>
+        <input type="radio" name="payment" value="online"> Online Payment
+      </label>
+      <div id="razorpay-container" style="display: none; margin-top: 10px;">
+       
+    </div>
+      <button class="confirm-order-btn">Place Order</button>
+    </div>
+
+    
+    
+  </div>
+  </div>
+ </div>
+  
+
+ <script type="module" src="payment.js"></script>
+</body>
+</html>

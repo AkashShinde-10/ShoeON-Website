@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+  <section class="nav">
+    <div class="logo">
+      <img src="Images/shoeONLogo.svg" alt="logo">
+    </div>
+    
+   <div class="home_btns">
+    <div class="nav_btns">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutUs.html">AboutUs</a></li>
+        <li><a href="contactUs.html">ContactUs</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="lgn-cart-btn">
+      <button class="menu-toggle">&#9776;</button>
+     </div>
+    
+   </div>
+  </section>
+
+  <div class="contact_container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feel free to reach out to us!</p>
+
+    <!--   Contact Form    -->
+
+    <form action="javascript:void(0)" id="contact-form">
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter the subject">
+
+      <label for="message">Message:</label>
+      <textarea rows="6" name="message" id="message" required placeholder="Write your message here... "></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <div id="response"></div>
+  </div>
+
+
+  
+  <!--                Footer start                    -->
+
+
+  <footer>
+    <div class="footer-container">
+      <!-- Section for about the site or company -->
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are India's leading online shoe store offering a wide variety of athletic and casual footwear from top global brands like Nike, Adidas, Puma, Reebok, and New Balance.</p>
+      </div>
+  
+      <!-- Section for customer service or contact -->
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section for legal information -->
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section for social media links -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section for payment and security information -->
+      <div class="footer-section">
+        <h3>Payment Methods</h3>
+        <ul>
+          <li>Credit & Debit Cards</li>
+          <li>UPI (Unified Payments Interface)</li>
+          <li>Net Banking</li>
+          <li>Cash on Delivery</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShoeON.com. All rights reserved.</p>
+      <p>Made by Akash Shinde</p>
+    </div>
+  </footer>
+  
+
+
+
+  <!--                Footer End                    -->
+
+  <script type="module" src="contactUs.js"></script>
+  <script type="module" src="home.js"></script>
+
+</body>
+</html>

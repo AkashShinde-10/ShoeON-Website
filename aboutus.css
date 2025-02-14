@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  font-family: "Poppins", sans-serif;
+}
+
+.aboutuscontent{
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.aboutuscontent h2{
+  padding: 10px;
+}
+
+.aboutuscontent h4{
+  padding: 7px 0 0 0;
+}
+
+.shoptoday, .chooseus, .brands, .weoffers, .mission, .about{
+  margin-bottom: 25px;
+}
